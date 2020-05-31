@@ -3,16 +3,50 @@
     margin: 0;
 }
 
-h1{
+.start{
+    position: absolute;
+    z-index:2;
+    background-color: rgba(128, 128, 128, 0.582);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+}
+.start .start-text{
+    background-color: rgba(255, 255, 255, 0.74);
+    height: 300px;
+    margin: 150px 300px;
+    padding-top: 80px;
+    padding-bottom: 25px;
+    border-radius: 50px;
+    
+}
+.start .start-text h1{
+    font-size: 120px;
+}
+.start-text button{
+    font-size: 40px;
+    padding: 10px 20px;
+    margin-top: 30px;
+}
+.start-text button:hover{
+    background-color: rgba(214, 214, 214, 0.774);
+
+}
+.main h1{
     font-size: 50px;
     font-family: cursive;
     font-weight: bolder;
     text-align: center;
     padding-top: 10px;
     text-shadow: 5px 5px 10px green;
+    z-index: 0;
+    filter: blur(10px);
     
 }
 #images{
+    filter: blur(10px);
+    z-index: 0;
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-evenly;
